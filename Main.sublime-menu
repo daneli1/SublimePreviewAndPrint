@@ -1,0 +1,50 @@
+[
+    {
+        "id": "file",
+        "children":
+        [
+	    { "caption": "PreviewAndPrint", "command": "external_print_preview" }
+         ]
+    },
+    {
+        "id": "preferences",
+        "children":
+        [
+            {
+                "id": "package-settings",
+                "children":
+                [
+                    {
+                        "caption": "PreviewAndPrint",
+                        "children":
+                        [
+                            {
+                                "command": "open_file", "args":
+                                {
+                                    "file": "${packages}/PreviewAndPrint/README.md"
+                                },
+                                "caption": "README"
+                            },
+                            { "caption": "-" },
+                            {
+                                "command": "open_file", "args":
+                                {
+                                    "file": "${packages}/PreviewAndPrint/ExternalPrintPreview.sublime-settings"
+                                },
+                                "caption": "Settings – Default"
+                            },
+                            {
+                                "command": "open_file", "args":
+                                {
+                                    "file": "${packages}/User/ExternalPrintPreview.sublime-settings"
+                                },
+                                "caption": "Settings – User"
+                            },
+                            { "caption": "-" }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]
