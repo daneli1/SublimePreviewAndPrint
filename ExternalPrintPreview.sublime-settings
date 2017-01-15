@@ -1,0 +1,170 @@
+{
+
+// Previewer or cups/lpr front end. evince, okular, 
+// acroread, xpp, gtklp, xpdf, etc. For linux, this
+// program must be in your path. For Windows, please
+// include the full path and full executable filename
+// hint: use windows "which" command to discover
+// path and full filename
+"previewer/printer" : "okular",
+
+// Files with unsaved changes ("dirty") print from  
+// the buffer rather than the file. To avoid that, 
+// save your files before printing. Set this to true if  
+// you want a reminder.
+"warn_if_dirty" : false,
+ 
+// If text is selected, print only the selection(s)
+// not the entire file.
+"print_selections" : true,
+
+// Set true to disable temporary postcript/pdf conversion. 
+// Use if you can't get enscript or pandoc running.
+"skip_conversion" : false,
+
+// Send to lpr w/out conversion or preview
+"send_directly_to_printer" : false,
+ 
+// Lpr formatting to use if send_directly_to_printer is true.
+// "man lpr" for more options
+	"lpr_options":
+	{
+		"media" : "letter",
+
+		"sides" : "two-sided-long-edge",
+
+        //header options:
+		"prettyprint" : "",
+
+    	"font" : "Times-Roman12",
+    },
+
+
+// Postscript converter. On linux, this
+// program must be in your path (/usr, /usr/bin).
+// For windows, you must explicitly
+// specify full path and full .exe filename.
+// hint: use Windows "which" command to 
+// discover full executable name and path
+
+"postscript_converter" : "enscript",
+
+
+// postscript options:
+// man enscript for other options you may wish to add
+    "postscript_options":
+    {
+    	// windows enscript not ok with "media"?
+    	// paper size. letter or A4
+    	"media": "letter",
+
+    	// font for body of document
+    	"font" : "Courier10",
+
+    	// margins left, right, top, bottom in postscript points
+        // "margins" : "40:40:70:70",
+
+    	// header string. see man enscript. E.g,
+    	// $n|%W|$% = title on left, date in center
+    	// page number on right
+        // "header" : "$n|%W|$%",
+
+    	//font for header
+    	"header-font" : "Courier10",
+
+    	"word-wrap":"",
+
+    	"copies" : "1",
+
+    	//"truncate-lines":,
+
+        // code/syntax style of highlighting to apply to printed output
+        "highlight" : "python",
+
+        // 1 = color highlight code 
+        "color" : "1" ,
+
+        "line-numbers" : true,
+
+        "columns" : "1", 
+
+        "landscape" : "",
+
+// start counting from which line number
+        "line-numbers" : "1",
+
+//        pretty-print
+        "fancy-header" : ""
+
+    },
+// if your file syntax type matches the override type below,
+// the secondary postscript options are used. This allows
+// you to have one set of options for printing code
+// and another for printing plain text.
+"secondary_postscript_syntax_override": "plain text",
+
+
+    "secondary_postscript_options":
+    {
+        // windows enscript not ok with "media"?
+        // paper size. letter or A4
+        "media": "letter",
+
+        // font for body of document
+        "font" : "Times-Roman12",
+
+        // margins left, right, top, bottom in postscript points
+        "margins" : "40:40:70:70",
+
+        // header string. see man enscript. E.g,
+        // $n|%W|$% = title on left, date in center
+        // page number on right
+        "header" : "$n|%W|$%",
+
+        // font for header
+        "header-font" : "Times-Roman12",
+
+        "word-wrap":"",
+
+        "copies" : "1",
+
+    },
+
+// When printing selections, you can suppress printing the document title 
+// by setting "NoTitle" below. You can also specify an alternative title 
+// such as "<<selections>>". Leave an empty string ("") to
+// have the document title printed with selections
+"override_title_for_selections" : "<<selections>>",
+
+
+// markdown to pdf converter 
+"pdf_converter" : "pandoc",
+
+// pandoc options for pdf conversion
+    "pdf_options":
+    {
+    	// comvert from markdown syntax
+    	"from" : "markdown",
+
+    	// valid choice are latex, context, html5
+    	// these depend on a working install of
+    	// LaTeX, ConTeXt, or wkhtmltopdf
+    	// note that pandoc will use latex by default
+    	// if this option is left blank
+    	"to" : "latex"
+    },
+
+
+// When printing markdown/latex selections, yaml header blocks are  
+// ignored unless the header block is the first selection.
+// Alternately, you can place a copy of the YAML block in a
+// stand-alone file and have the block automatically included.
+// (Only applies to markdown files converted with pandoc/latex.)
+
+"yaml_header_injection" : false,
+
+// specify full path to a copy of your YAML header block
+// "yaml_header_include_file_location" : "PathtoMyYAMLblock.txt",
+
+
+}
