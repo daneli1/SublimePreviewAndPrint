@@ -18,14 +18,14 @@
                         "caption": "PreviewAndPrint",
                         "children":
                         [
-                            {
-                                "command": "open_file", "args":
-                                {
-                                    "file": "${packages}/PreviewAndPrint/README.md"
-                                },
-                                "caption": "README"
-                            },
-                            { "caption": "-" },
+//                            {
+//                                "command": "open_file", "args":
+//                                {
+//                                    "file": "${packages}/PreviewAndPrint/README.md"
+//                                },
+//                                "caption": "README"
+//                            },
+//                            { "caption": "-" },
                             {
                                 "command": "open_file", "args":
                                 {
