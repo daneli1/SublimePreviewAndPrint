@@ -50,7 +50,7 @@ place the language name in the "postscript_options" "highlight" field. For examp
 
      "highlight" : "python"
 
-Other helpful settings are "color" : "1"  and "line-numbers" : true. 
+Other helpful settings are "color" : "1"  and "line-numbers" : "1". 
 
 Once you have settled on highlighting and other postscript options, these become the default for 
 everything you preview or print that passes first through the enscript converter. This can be annoying 
