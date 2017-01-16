@@ -22,7 +22,7 @@ to enable each option.
  - Send unformatted text direct to a printer: Requires lpr.
  - Display a standard dialog box for choosing a printer, duplex vs single sided, sheets per page, 
  	etc: Requires gtklp or xpp. (No need to install gtklp or xpp if you use one of the viewers below.)
- - Full page preview. Requires one of: okular, evince, xpdf, or acroread.
+ - Full page preview. Requires: evince or okular. (xpdf or acroread also work for markdown.)
  - Formatting of text documents or syntax highlighting of code: Needs enscript to create a temporary 
  	formatted postscript version of your document. 
  - Formatting of markdown documents: Pandoc with latex, context or wkhtmltopdf. A temporary copy of 
