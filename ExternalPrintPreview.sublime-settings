@@ -6,7 +6,7 @@
 // include the full path and full executable filename
 // hint: use windows "which" command to discover
 // path and full filename
-"previewer/printer" : "okular",
+"previewer/printer" : "evince",
 
 // Files with unsaved changes ("dirty") print from  
 // the buffer rather than the file. To avoid that, 
@@ -79,12 +79,12 @@
     	//"truncate-lines":,
 
         // code/syntax style of highlighting to apply to printed output
-        "highlight" : "python",
+        // "highlight" : "python",
 
         // 1 = color highlight code 
         "color" : "1" ,
 
-        "line-numbers" : true,
+        // "line-numbers" : true,
 
         "columns" : "1", 
 
@@ -100,8 +100,9 @@
 // if your file syntax type matches the override type below,
 // the secondary postscript options are used. This allows
 // you to have one set of options for printing code
-// and another for printing plain text.
-"secondary_postscript_syntax_override": "plain text",
+// and another for printing "plain text".
+
+"secondary_postscript_syntax_override": "NONE",
 
 
     "secondary_postscript_options":
