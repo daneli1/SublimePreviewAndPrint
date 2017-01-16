@@ -117,8 +117,8 @@ OR
 
 
 Q: Why doesn't SublimeText include its own native print capability?
-A: Hmm. The goal of PreviewAndPrint is to function close enough to what most people need so that the lack of native 
-printing capabilities is no longer a serious impediment. I would very much appreciate feedback on how well this goal 
+A: The goal of PreviewAndPrint is to come close enough to what most people need so that the lack of native 
+printing capabilities is less of an impediment. I would very much appreciate feedback on how well this goal 
 is accomplished here, bug reporting, as well as suggestions for added features.
 
 Acknowledgments: This plugin owes much to SublimePrint.py and Pandoc.py. The errors (and clunky coding) are all my own.
