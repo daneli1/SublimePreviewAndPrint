@@ -1,6 +1,5 @@
 # SublimePreviewAndPrint
 Preview and print for Sublime Text 3
-SublimePreviewAndPrint README
 
 This plugin previews and prints from Sublime Text. It is evoked with a key binding, 
 from the File menu, or from the right click context menu. [or from the command palette menu]
