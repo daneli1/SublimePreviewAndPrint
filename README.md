@@ -28,7 +28,7 @@ to enable each option.
  - Formatting of markdown documents: Pandoc with latex, context or wkhtmltopdf. A temporary copy of 
  	your document will be converted to pdf.
 
-Which viwer program - okular, evince, xpdf, acroread - should you use for page preview? The simplest
+Which viewer program - okular, evince, xpdf, acroread - should you use for page preview? The simplest
 answer is okular, since it can work with all the (temporary) formats PreviewAndPrint creates: text, 
 postscript, pdf. A more detailed answer is: If you have not enabled formatting, then you need a viewer
 that can display raw text: okular. If you have enabled formatting of text documents or highlighted code 
@@ -39,8 +39,9 @@ that can display postscript and pdf: okular or enscript. Whichever viwer program
 File-> Print from the viewer's main menu when you are ready to select print options and send your 
 document to the printer.
 
-If you are going to be printing blocks of code - rather than just prose - enscript can apply (color) 
-code highlighting to many of Sublime Text's syntaxes. From the command line, 
+Use the "postscript_options" section of the configuration file to set fonts, margins, headers, etc for 
+your printed output. If you are going to be printing blocks of code - rather than just prose - enscript 
+can apply (color) code highlighting to many of Sublime Text's syntaxes. From the command line, 
 
      "enscript --help-highlight" 
 
