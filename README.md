@@ -11,7 +11,7 @@ in the user configuration file.)
 At the lowest level, you can configure this plugin to do nothing more than send text directly 
 to a printer via lpr. At the next level, a standard dialog box allows you to choose a printer, 
 page range, single vs duplex, etc. Additional options allow a feature-rich preview of your 
-document via okular, evince, acroread or xpdf. Finally, if you enable formatting/conversion 
+document via evince or okular. Finally, if you enable formatting/conversion 
 options, you can apply fonts, margins, word-wrap, headers, etc to printed text, and syntax 
 color highlighting for code. Working with markdown files, you can preview and print latex 
 formatted documents as well. (The latter depends on a working installation of pandoc and latex.)
