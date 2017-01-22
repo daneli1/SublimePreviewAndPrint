@@ -73,6 +73,20 @@ programs listed in the configuration file. For evince, for example, you would ne
 After you install one of these programs in Windows, you can search for its full path using the "where" command 
 line utility. Paste the full path/filename into the configuration file.
 
+Screenshots:
+
+Here's an example of enscript's code highlighting, previewed in okular, and ready to print:
+
+![Screenshot](Screenshot10.png)
+
+Markdown (+ latex) previewed in evince, choosing printer options:
+
+![Screenshot](Screenshot8.png)
+
+No preview, using gtklp to select printer options:
+
+![Screenshot](Screenshot2.png)
+
 
 Anticipated frequently asked questions:
 
