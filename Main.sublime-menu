@@ -29,7 +29,7 @@
                             {
                                 "command": "open_file", "args":
                                 {
-                                    "file": "${packages}/PreviewAndPrint/ExternalPrintPreview.sublime-settings"
+                                    "file": "${packages}/SublimePreviewAndPrint/ExternalPrintPreview.sublime-settings"
                                 },
                                 "caption": "Settings – Default"
                             },
